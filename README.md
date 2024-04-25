@@ -1,2 +1,2 @@
 # e96
-Video Game Development Project
+Homework #1: Creating a Scene in Unity
